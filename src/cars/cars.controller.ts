@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable prettier/prettier */
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, ParseUUIDPipe, Patch, Post, UsePipes, ValidationPipe } from '@nestjs/common';
 import { CarsService } from './cars.service';
@@ -26,7 +27,7 @@ export class CarsController {
   @Post()
   // @UsePipes(ValidationPipe)
   createCar(@Body() createCarDto: CreateCarDto){
-    return createCarDto;
+    return this.CarsService.create(createCarDto);
   }
 
   @Patch(':id')
