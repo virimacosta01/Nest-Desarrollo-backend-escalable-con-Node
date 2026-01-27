@@ -16,7 +16,7 @@ export const CARS_SEED: Car[] = [
     },
     {
         id:uuid(),
-        brand:'Suzuki',
+        brand:'Suz  uki',
         model:'Swift'
     }
 ] 
