@@ -18,6 +18,7 @@ export class SeedService {
 
   populateDB() {
 
+
     // CARS_SEED
     // BRANDS_SEED
     this.carsService.fillCarsWithSeedData(CARS_SEED);
